@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "4.1.6"
+}
+
+version '0.0.1'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+}
+
+dependencies {
+    compile("mysql:mysql-connector-java:8.0.19")
+}
